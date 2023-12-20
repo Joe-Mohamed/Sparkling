@@ -1,0 +1,240 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+
+/* Header styles */
+header {
+    background-image: linear-gradient(to right, #f7b2e5, #ff8fd8);
+    /* Gradient background */
+    padding: 20px 0;
+}
+
+.shop-name {
+    font-family: 'Montserrat', sans-serif;
+    /* Modern font */
+    font-size: 3em;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 0;
+}
+
+.social-icons {
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+
+.social-icons a {
+    color: #fff;
+    margin-right: 15px;
+    /* Adjust the spacing between icons */
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #ff80b3;
+    /* Change color on hover */
+}
+
+/* Product card styles */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.products {
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .gallery {
+      scroll-snap-type: x mandatory;
+      -webkit-overflow-scrolling: touch;
+      margin-bottom: 20px;
+      scroll-behavior: smooth;
+      overflow-x: scroll;
+    }
+  
+    .navigation {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+      overflow: hidden;
+      width: 100%;
+    }
+  
+    .navigation button {
+      background-color: pink;
+      color: #fff;
+      border: none;
+      border-radius: 50%;
+      padding: 10px;
+      cursor: pointer;
+      font-size: 20px;
+      transition: background-color 0.3s ease;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  
+    .prev {
+      left: 10px;
+    }
+  
+    .next {
+      right: 10px;
+    }
+  }     
+
+.gallery {
+    display: flex;
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    margin-bottom: 20px;
+  }
+
+.product-card {
+    flex: 0 0 auto;
+    width: 250px;
+    margin: 10px 5px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.5s ease-in-out;
+}
+
+.product-card:hover {
+    transform: scale(1.1);
+    z-index: 1;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px 15px 0 0;
+    transition: transform 0.5s ease-in-out;
+}
+
+.product-card:hover img {
+    transform: scale(1.1);
+}
+
+.product-info {
+    padding: 20px;
+    text-align: center;
+}
+
+.product-info h2 {
+    font-size: 1.5em;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.product-info p {
+    margin: 5px 0;
+    color: #666;
+}
+
+.cart-btn {
+    background-color: pink;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+.cart-btn:hover {
+    background-color: #ff80b3;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    position: relative;
+  }
+  
+  .navigation button {
+    background-color: pink;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    transition: background-color 0.3s ease;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .prev {
+    left: 10px;
+  }
+  
+  .next {
+    right: 10px;
+  }
+
+  .gallery::-webkit-scrollbar {
+    display: none;
+  }
+  
+
+.navigation button:hover {
+    background-color: #ff80b3;
+}
+
+/* Footer styles */
+footer {
+    background-color: #f7f7f7;
+    padding: 30px 0;
+    text-align: center;
+  }
+  
+  .payment-methods, .cart, .social-media {
+    margin-bottom: 20px;
+  }
+  
+  .payment-icons img {
+    width: 40px;
+    margin: 0 10px;
+  }
+  
+  .cart-btn {
+    background-color: pink;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cart-btn:hover {
+    background-color: #ff80b3;
+  }
+  
+  .social-icons a {
+    color: #333;
+    font-size: 24px;
+    margin: 0 10px;
+  }
+  
+  /* You might need to add styles for individual social media icons if needed */
+  
